@@ -50,7 +50,7 @@ For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, an
 ------------------------------------------------------------------------------------------------ */
 
 const alphabetizeBetter = (arr) => {
-  return arr.sort();
+   arr.sort();
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -82,9 +82,7 @@ For example, [1, 14, 0.2, -281, 54782] is only correctly sorted in that order.
 ------------------------------------------------------------------------------------------------ */
 
 const sortNumbersByLength = (arr) => {
-  arr.sort(function(a,b) {
-      return a.length -b.length;
-  })
+  
 };
 
 /*-----------------------------------------------------------------------------------------------
@@ -122,17 +120,7 @@ If two people share the same last name, alphabetize on their first name.
 If two people have the same full name, the younger one should come first. Do not worry about capitalization.
 ------------------------------------------------------------------------------------------------ */
 
-const sortPeopleBetter = (arr) => {
-  arr.sort(function(a,b) {
-      if(a.lastname===b.lastname) {
-          return arr.sort(firstname);
-      }
-      else if(a.fullname===b.fullname) {
-          return a.age>b.age;
-      }
-  });
-  return arr;
-};
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 9 - Stretch Goal
