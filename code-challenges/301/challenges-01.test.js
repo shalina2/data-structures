@@ -37,7 +37,7 @@ const addValues = (arr, value) => {
 }
 
 const addNumbers = (num, arr, times, callback) => {
- for(let i=0; i< times; i++) {
+ for(let i=0; i < times; i++) {
      callback(arr,num);
  }
  return arr;
@@ -76,9 +76,9 @@ Write a function named removeWithForEach that produces the same output as challe
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithForEach = (arr, callback) => {
-  arr.forEach(element => {
-      return callback();
-  })
+  arr.forEach((number)=> callback(number,arr));
+      return arr;
+
 }
 
 /* ------------------------------------------------------------------------------------------------
