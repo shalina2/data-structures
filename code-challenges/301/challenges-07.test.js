@@ -132,11 +132,11 @@ const snorlaxAbilities = {
 };
 
 const extractAbilities = (arr) => {
-    let newarr = arr.map(function(el) {
-        return el = el.ability.name;
-    });
-    return newArr;
-};
+    
+        return arr.map(item => item.ability.name)
+    };
+    
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7

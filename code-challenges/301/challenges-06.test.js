@@ -80,7 +80,10 @@ Write a function named getHouses that returns a new array containing the names o
 
 const getHouses = (arr) => {
   let houses = [];
-  houses.push(gethouses)
+  
+  Object.values(arr).forEach(person => {
+    houses.push(person.house);
+  });
   return houses;
 }
 
@@ -97,7 +100,12 @@ hasChildrenValues(characters, 'Eddard') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
- 
+  let children = 0;
+  Object.values(arr).forEach(person => {
+    if (person.name === character) {
+      children = person.children.length > 0 ? true : false;
+    }
+  });
 }
 
 /* ------------------------------------------------------------------------------------------------
