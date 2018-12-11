@@ -11,10 +11,12 @@ Note: You might need to use the same method more than once.
 For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 ------------------------------------------------------------------------------------------------ */
 
-const count = (target, input) => {
-  // Solution code here...
-  
-};
+// const count = (target, input) => {
+//   if(input.length===0) {
+//     return 0;
+//   }
+//   let arr =input.map
+// };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -27,9 +29,12 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 ------------------------------------------------------------------------------------------------ */
 
 const totalSum = (input) => {
-  let count=0;
-  for(let i =0; i<arr.length; i++)
-  count.add
+  let sum =input.map(function(arr) {
+    return arr =arr.reduce(function(acc,cur) {return acc + cur;},0);
+  
+  });
+  return sum.reduce(function(acc,cur){
+    return acc + cur;},0);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -45,12 +50,17 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
 const divisibleByFiveTwoToThePower = (input) => {
-  let arr=[];
-  if(input%5===1){
-    arr.slice
-  }else { return arr*arr}
+  let arr = input.map(function(arr){
+    return arr = arr.filter(function(el){
+      return typeof(el) === 'number' && el%5 === 0;
+    });
+  });
+  return arr.map(function(array){
+    return array = array.map(function(el){
+      return el = 2**el;
+    });
+  });
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
