@@ -11,12 +11,12 @@ Note: You might need to use the same method more than once.
 For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 ------------------------------------------------------------------------------------------------ */
 
-// const count = (target, input) => {
-//   if(input.length===0) {
-//     return 0;
-//   }
-//   let arr =input.map
-// };
+const count = (target, input) => {
+  if(input.length===0) {
+    return 0;
+  }
+  let arr =input.map
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
