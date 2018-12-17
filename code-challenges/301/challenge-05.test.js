@@ -14,7 +14,16 @@ For example, if the input is 'Welcome', the output will be:
 ------------------------------------------------------------------------------------------------ */
 
 const howMuchPencil = (str) => {
-  //answer
+  let result = [];
+  let temp = str ;
+  
+  for(var i=0; i <= str.length ; i++){
+    result.push(temp);
+    temp = temp.slice(1);
+
+  }
+  
+  return result;
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -91,10 +100,10 @@ You may also use other string or array methods.
 
 const splitFoods = (recipe) => {
   let result = [];
-  let splitFoods = recipe.split(/,\s/);
-  result.push(splitFoods);
+  recipe.split();
   
   return result;
+
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -109,8 +118,13 @@ Return a new array containing just the verbs. For example, ['Mix until evenly di
 
 const stepActions = (recipe) => {
   let result = [];
-  let stepActions =recipe.splice(0,1)
-    return result;
+  
+  for(let i = 0; i<gruffaloCrumble.steps.length; i++){
+    let str = gruffaloCrumble.steps[i].slice(0,gruffaloCrumble.steps[i].indexOf(' '));
+    result.push(str);
+    
+  }
+  return result;
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -127,8 +141,14 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const removeEvenValues = (arr) => {
-    let result = arr.splice(arr%2,"");
-    console.log(result);
+  for(let i = 0; i<arr.length; i++){
+    if(arr[i]%2 === 0){
+     arr.splice(i,1);
+    }
+      
+    }
+    console.log(arr);
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -178,8 +198,7 @@ For example, removeVowels('gregor') returns 'grgr'.
 ------------------------------------------------------------------------------------------------ */
 
 const removeVowels = (str) => {
-    let vowels = str.splice(vowels);
-    console.log(str.splice(vowels));
+  //
 };
 
 /* ------------------------------------------------------------------------------------------------
